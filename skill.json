@@ -1,0 +1,41 @@
+{
+  "name": "bulk-discount-optimizer-skill",
+  "version": "1.0.0",
+  "description": "Calculate volume-based tiered discount schedules to optimize margin while incentivizing larger order sizes.",
+  "author": "alphaparkinc",
+  "category": "pricing",
+  "tags": [
+    "pricing",
+    "bulk-discount",
+    "margin",
+    "wholesale",
+    "e-commerce"
+  ],
+  "inputs": {
+    "unit_price": {
+      "type": "number",
+      "description": "Single unit selling price in USD."
+    },
+    "unit_cost": {
+      "type": "number",
+      "description": "Unit production/purchase cost in USD."
+    },
+    "max_discount_pct": {
+      "type": "number",
+      "description": "Maximum allowed discount percentage for bulk tiers.",
+      "default": 25
+    }
+  },
+  "outputs": {
+    "tiers": {
+      "type": "array",
+      "description": "Volume tiers with discount rates and profit margins."
+    },
+    "average_order_value_uplift_est": {
+      "type": "number",
+      "description": "Estimated average order value increase pct."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
