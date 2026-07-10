@@ -1,5 +1,5 @@
 {
-  "name": "bulk-discount-optimizer-skill",
+  "name": "genpark-bulk-discount-optimizer-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Calculate volume-based tiered discount schedules to optimize margin while incentivizing larger order sizes.",
   "author": "genpark",
